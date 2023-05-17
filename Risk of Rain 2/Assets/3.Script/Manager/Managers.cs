@@ -35,7 +35,8 @@ public class Managers : MonoBehaviour
             DontDestroyOnLoad(go);
             s_instance = go.GetComponent<Managers>();
             //초기화가 필요한 멤버들의 초기화를 진행해 줍니다.
-            s_instance._iteminven.init();
+            //데이터 및 Reource관련하여 초기화가 필요한 친구들은
+            //MainMenu( 첫 씬에서 비동기 로드가 완료되면 초기화를 진행
         }
     }
 
